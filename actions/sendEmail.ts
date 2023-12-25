@@ -23,17 +23,20 @@ export const sendEmail = async (formData: FormData) => {
     };
   }
 
-  let data;
+  let admin;
   /*
   Contact Form <onboarding@resend.dev>
   */
   try {
-    data = await resend.emails.send({
-      from: "Contact Form <onboarding@resend.dev>",
+    admin = await resend.emails.send({
+      from: "Bouakkadia Brahim Portfolio <onboarding@resend.dev>",
       to: "bbouakkadia@live.fr",
-      subject: "Message from contact form",
+      subject: "Confirmation email from bouakkadia brahim portfolio",
+      cc: senderEmail,
       reply_to: senderEmail,
       react: React.createElement(ContactFormEmail, {
+        PreviewText: "👋 Thank you for contacting me",
+        headerText: "This is a copy of you email sent to me 🧐 😊",
         message: message,
         senderEmail: senderEmail,
       }),
@@ -46,6 +49,6 @@ export const sendEmail = async (formData: FormData) => {
   }
 
   return {
-    data,
+    admin
   };
 };

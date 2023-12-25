@@ -18,19 +18,21 @@ type ContactFormEmailProps = {
 };
 
 export default function ContactFormEmail({
+  PreviewText,
+  headerText,
   message,
   senderEmail,
-}: ContactFormEmailProps) {
+}: any) {
   return (
     <Html>
       <Head />
-      <Preview>New message from your portfolio site</Preview>
+      <Preview>{PreviewText}</Preview>
       <Tailwind>
         <Body className="bg-gray-100 text-black">
           <Container>
             <Section className="bg-white borderBlack my-10 px-10 py-4 rounded-md">
               <Heading className="leading-tight">
-                You received the following message from your portfolio 
+              {headerText} 
               </Heading>
               <Text>{message}</Text>
               <Hr />
