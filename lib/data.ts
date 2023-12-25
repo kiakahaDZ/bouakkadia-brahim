@@ -1,10 +1,10 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaAngular, FaReact, FaSymfony } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import symfony from "@/public/Symfony.png";
+import laravel from "@/public/Laravel.png";
+import angular from "@/public/Angular.png";
 
 export const links = [
   {
@@ -35,52 +35,60 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Master of Science in Computer Science Software Engineering",
+    location: "University Badji Mokhtar Annaba",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2009-2014",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Full Stack Developer - Freelance",
+    location: "Remote",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Work as Assistant Project Manager for the implementation of projects such as Electronic Medical Records Platform for the management of hospitals and care centres, Pharmacy Management Platform, ERP for Hospital Management Triple Hospital Accounting.",
+    icon: React.createElement(FaSymfony),
+    date: "2015-2020",
+  },
+  {
+    title: "Full Stack Developer - Freelance",
+    location: "Remote",
+    description:
+      "Develop web solutions, api, plugins and also development under the e-commerce platforms sylius, prestashop, woocommerce",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2021 - 2022",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Full-Stack Developer - Freelance",
+    location: "Remote",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Write the code needed to run applications Stack: AngularJS, Nodejs, FIrebase.",
+    icon: React.createElement(FaAngular),
+    date: "2023 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Management of hospitals and care centres platform",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "for more than 5 years i have Work as Assistant Project Manager for the implementation of projects such as Electronic Medical Records Platform for the management of hospitals and care centres also a Pharmacy Management Platform, and ERP for Hospital Management Triple Hospital Accounting",
+    tags: ["Symfony 3..5", "BootStrap", "phpmyadmin", "adobeXD", "C#"],
+    imageUrl: symfony,
   },
   {
-    title: "rmtDev",
+    title: "Develop and support E-commerce platform",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Develop web solutions, api, plugins and also development under the e-commerce platforms sylius, prestashop, woocommerce, from the initial concept to the final configuration, according to the specifications of the company.",
+    tags: ["Symfony", "Laravel", "Mautic", "Sylius", "Payment Gatway", "GIT", "GITHUB", "basecamp"],
+    imageUrl: laravel,
   },
   {
-    title: "Word Analytics",
+    title: "Marketing platform",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Write the code needed to run applications, Test the proper functioning of the site from all points of view (testing) Fix the errors that appeared (debugging), Solve technical problems related to the operation of web applications",
+    tags: ["Angular", "NodeJs", "Firebase", "Firestore", "storage", "google cloud", "fuse", "GIT", "GITHUB", "atlassian/jira"],
+    imageUrl: angular,
   },
 ] as const;
 
@@ -92,16 +100,16 @@ export const skillsData = [
   "React",
   "Next.js",
   "Node.js",
+  "Angular",
+  "PHP",
+  "Laravel",
+  "Symfony",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
   "Redux",
   "GraphQL",
-  "Apollo",
   "Express",
   "PostgreSQL",
-  "Python",
-  "Django",
   "Framer Motion",
 ] as const;
