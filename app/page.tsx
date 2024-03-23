@@ -5,6 +5,7 @@ import Intro from "@/components/intro";
 import Projects from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
 import Skills from "@/components/skills";
+import PrivacyPolicy from "@/pages/privacy-policy";
 
 export default function Home() {
   return (

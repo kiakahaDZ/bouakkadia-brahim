@@ -31,6 +31,11 @@ export const links = [
     name: "Contact",
     hash: "#contact",
   },
+  {
+    name: "Privacy Policy",
+    hash: "/privacy-policy",
+    link: true
+  },
 ] as const;
 
 export const experiencesData = [
