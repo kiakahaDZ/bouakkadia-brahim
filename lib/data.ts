@@ -31,12 +31,15 @@ export const links = [
     name: "Contact",
     hash: "#contact",
   },
+] as const;
+
+/*
   {
     name: "Privacy Policy",
     hash: "/privacy-policy",
     link: true
   },
-] as const;
+*/
 
 export const experiencesData = [
   {
